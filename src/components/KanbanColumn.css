@@ -1,0 +1,115 @@
+.kanban-board {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.kanban-column {
+    background: white; /* Column background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    margin: 0 10px; /* Space between columns */
+    padding: 10px; /* Padding inside columns */
+    min-width: 250px; /* Minimum width for columns */
+    flex: 1; /* Flex grow to take up available space */
+}
+
+.kanban-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.column-logo {
+    width: 24px; /* Adjust as needed */
+    height: 24px; /* Adjust as needed */
+    margin-right: 8px; /* Space between logo and title */
+    display: inline-block; /* Aligns the logo with the title */
+}
+
+.column-title {
+    font-size: 18px; /* Font size for column title */
+    margin: 0; /* No margin for titles */
+}
+
+.column-count {
+    font-size: 16px; /* Font size for column count */
+    background-color: #e0e0e0; /* Count background */
+    border-radius: 12px; /* Rounded corners for count */
+    padding: 4px 8px; /* Padding inside count */
+}
+
+.column-actions {
+    display: flex; /* Align buttons in a row */
+}
+
+.add-button, .more-options-button {
+    background: #007BFF; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for buttons */
+    padding: 4px 8px; /* Padding for buttons */
+    margin-left: 4px; /* Space between buttons */
+    cursor: pointer; /* Cursor pointer on hover */
+}
+
+.add-button:hover, .more-options-button:hover {
+    background: #0056b3; /* Darker button color on hover */
+}
+
+.kanban-cards {
+    margin-top: 10px; /* Space between header and cards */
+}
+
+.card-container {
+    margin: 10px; /* Space between cards */
+    padding: 10px; /* Padding inside cards */
+    border: 1px solid #ccc; /* Card border */
+    border-radius: 4px; /* Rounded corners for cards */
+    background-color: white; /* Card background color */
+    transition: transform 0.2s; /* Transition effect */
+}
+
+.card-container:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 16px; /* Font size for card title */
+    margin: 0; /* No margin */
+}
+
+.card-status-title {
+    display: flex; /* Flex layout for status and title */
+    align-items: center; /* Align items center */
+}
+
+.priority-icon {
+    width: 16px; /* Icon size */
+    height: 16px; /* Icon size */
+    margin-right: 4px; /* Space between icon and text */
+}
+
+.card-avatar {
+    width: 30px; /* Avatar size */
+    height: 30px; /* Avatar size */
+    border-radius: 50%; /* Circular avatar */
+    display: flex; /* Flex for centering initials */
+    align-items: center; /* Align center */
+    justify-content: center; /* Justify center */
+    color: white; /* Initials color */
+}
+
+.card-info-row {
+    display: flex; /* Flex layout for info row */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Align items center */
+}

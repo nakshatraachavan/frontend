@@ -1,0 +1,77 @@
+/* Card Container */
+.card-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 320px; /* Fixed width */
+    height: 100px; /* Fixed height, adjust as needed */
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+}
+
+/* Card Header */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.card-id {
+    font-weight: bold;
+    color: #8b8b8b;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    margin: 0;
+    overflow: hidden; /* Prevent overflow */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to 2 lines */
+    -webkit-box-orient: vertical;
+}
+
+/* Avatar Fix */
+.card-avatar {
+    width: 40px; /* Ensure width and height are equal */
+    height: 40px;
+    border-radius: 50%; /* This ensures the avatar is circular */
+    display: flex; /* Center initials or image */
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white; /* Text color inside the avatar */
+    text-transform: uppercase; /* Make sure initials are uppercase */
+    overflow: hidden; /* In case there is an image, ensure it fits */
+}
+
+/* Priority Section */
+.card-priority {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+}
+
+/* Tag Section */
+.card-tag {
+    display: flex; /* Ensure tags are displayed inline */
+    align-items: center; /* Center items vertically */
+}
+
+/* Tags */
+.tag {
+    background-color: white; /* Set background to white */
+    border: 1px solid #ccc; /* Set gray border */
+    border-radius: 12px; /* Rounded corners */
+    padding: 5px 10px; /* Padding inside the tags */
+    font-size: 14px; /* Adjust font size */
+    color: #333; /* Text color */
+    display: inline-block; /* Prevent tag from inheriting list item styles */
+    margin-left: 8px; /* Space between tags */
+}
+

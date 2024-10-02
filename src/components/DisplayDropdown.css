@@ -1,0 +1,94 @@
+.display-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.display-btn {
+  background-color: white; /* White background */
+  border: 1px solid #ccc; /* Gray border */
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex; /* Flex to align icon and text */
+  align-items: center; /* Center align vertically */
+}
+
+.display-icon {
+  width: 16px; /* Adjust icon size */
+  height: 16px; /* Adjust icon size */
+  margin-right: 5px; /* Space between icon and text */
+}
+
+.dropdown-options {
+  position: absolute;
+  background-color: white; /* White background */
+  border: 1px solid #ccc; /* Gray border */
+  padding: 10px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-dropdown {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.grouping-label {
+  color: gray;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.nested-dropdown {
+  position: relative;
+}
+
+.nested-btn {
+  background-color: white; /* White background */
+  border: 1px solid #ccc; /* Gray border */
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex; /* Flex to align arrow */
+  align-items: center; /* Center align vertically */
+}
+
+.arrow-icon {
+  width: 10px; /* Adjust arrow icon size */
+  height: 10px; /* Adjust arrow icon size */
+  margin-left: 5px; /* Space between text and arrow */
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white; /* White background */
+  border: 1px solid #ccc; /* Gray border */
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  cursor: pointer;
+  background-color: white; /* White background */
+  border-bottom: 1px solid #ccc; /* Gray border for separation */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
+
+/* Ensure nested dropdown menu specifically has the same styles */
+.nested-dropdown .dropdown-menu {
+  border: 1px solid #ccc; /* Ensure gray border */
+  background-color: white; /* Ensure white background */
+}
+
+/* Ensure the same styles are applied to the dropdown-options */
+.dropdown-options {
+  background-color: white; /* Set background to white */
+  border: 1px solid #ccc; /* Set border color */
+}

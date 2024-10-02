@@ -1,0 +1,83 @@
+/* Ticket Card Styling */
+.ticket-card-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 350px;
+    margin: 20px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Header Section */
+  .ticket-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .ticket-card-id {
+    font-weight: bold;
+    color: #8b8b8b;
+    font-size: 0.85rem;
+  }
+  
+  .ticket-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Avatar */
+  .ticket-card-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Tags Section */
+  .ticket-card-tag-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .ticket-tag {
+    background-color: #f0f0f0;
+    color: #666;
+    border-radius: 12px;
+    padding: 4px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .ticket-tag-icon {
+    background-color: #ececec;
+    color: #999;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* More Options (Three Dots) */
+  .ticket-more-options {
+    cursor: pointer;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+  }
+  
+  .ticket-more-options::before {
+    content: '•••';
+    font-size: 1.5rem;
+    color: #999;
+  }
+  
